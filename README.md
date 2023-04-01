@@ -15,7 +15,7 @@ Install unid with
 ```
 ## Usage/Examples
 
-Generating a UUID4
+Generating UUIDs
 
 ```javascript
 import { unid } from 'unid;
