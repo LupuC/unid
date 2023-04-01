@@ -13,17 +13,7 @@ export const unid = {
     });
     return unid;
   },
-
-  // check(uuidString: string): boolean {
-  //   try {
-  //     const uuidPattern = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
-  //     return uuidPattern.test(uuidString);
-  //   } catch (err) {
-  //     console.error(`Error validating UUID: ${err}`);
-  //     return false;
-  //   }
-  // },
-
+  
   generateUUID5(namespace: string, name: string): string {
     const nsBuffer = Buffer.from(namespace.replace(/-/g, ''), 'hex');
     const nameBuffer = Buffer.from(name, 'utf8');
