@@ -14,7 +14,7 @@ export const unid = {
     return unid;
   },
   
-  generateUUID5(namespace: string, name: string): string {
+  generate5(namespace: string, name: string): string {
     const nsBuffer = Buffer.from(namespace.replace(/-/g, ''), 'hex');
     const nameBuffer = Buffer.from(name, 'utf8');
     const hash = crypto.createHash('sha1');
