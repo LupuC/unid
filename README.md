@@ -18,7 +18,7 @@ Install unid with
 Generating UUIDs
 
 ```javascript
-import { unid } from 'unid;
+import { unid } from '@lupucl/unid;
 
 // Generating UUID4
 const uuid4 = unid.generate4(); // e.g. 'd6339023-aa8e-4c52-a53d-f3f3f913b8c5'
