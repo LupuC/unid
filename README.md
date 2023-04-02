@@ -29,10 +29,10 @@ const name = 'Hello, world!';
 const uuid5 = unid.generate5(uuid4, name); //e.g 'cd6366d4-01cd-5948-97a2-3309017638fc'
 
 // Generating UNID1
-const unid1 = unid.v1();
+const unid1 = unid.v1(); //e.g '4de338f09b7f-19788-d2a75-259c-9b9a4f42c99c'
 ```
 
-Validating a UUID
+Validating a UUID/ UNID
 ```javascript
 //UUID4, UUID5 & UNID1
 const isValid = unid.check(UUID); // true, can use UUID4, UUID5 and UNID1
