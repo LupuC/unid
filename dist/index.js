@@ -78,6 +78,3 @@ exports.unid = {
         }
     },
 };
-const test = exports.unid.v1();
-console.log(test);
-console.log(exports.unid.check(test));

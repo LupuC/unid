@@ -1,6 +1,6 @@
 
 # unid
-A public TypeScript library to generate UUIDs. You can generate UUID4 and UUID5.
+A public TypeScript library to generate UUIDs. You can generate UUID4, UUID5 and UNID1 (new).
 
 
 ## Installation

@@ -57,9 +57,3 @@ export const unid = {
   },
   
 };
-
-
-const test = unid.v1();
-
-console.log(test);
-console.log(unid.check(test))
