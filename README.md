@@ -8,10 +8,10 @@ A public TypeScript library to generate UUIDs. You can generate UUID4 and UUID5.
 Install unid with
 
 ```bash
-  npm install unid
+  npm install @lupucl/unid
 ```
 ```bash
-  yarn add unid
+  yarn add @lupucl/unid (soon)
 ```
 ## Usage/Examples
 

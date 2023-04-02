@@ -29,13 +29,14 @@ export const unid = {
     const uuid5 = `${hex.substr(0, 8)}-${hex.substr(8, 4)}-5${hex.substr(13, 3)}-${hex.substr(16, 4)}-${hex.substr(20, 12)}`;
     return uuid5;
   },
-  
+
 
   check(uuidString: string): boolean {
     try {
       const uuid4Pattern = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
       const uuid5Pattern = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-5[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
-      return uuid4Pattern.test(uuidString) || uuid5Pattern.test(uuidString);
+      const unidPattern = /^[a-zA-Z0-9]{8}-1[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}$/;
+      return uuid4Pattern.test(uuidString) || uuid5Pattern.test(uuidString) || unidPattern.test(uuidString);
     } catch (err) {
       console.error(`Error validating UUID: ${err}`);
       return false;
@@ -43,3 +44,4 @@ export const unid = {
   },
   
 };
+
